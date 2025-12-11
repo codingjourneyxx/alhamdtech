@@ -61,10 +61,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-950 to-black text-white pt-16 pb-8 sm:py-0">
+    <section id="home" className="relative w-full min-h-screen flex items-center justify-center overflow-hidden text-white pt-16 pb-8 sm:py-0">
+      {/* Background image */}
+      <img
+        src="https://img.freepik.com/premium-vector/dark-blue-background-with-blue-gradient_1055519-2175.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
       {/* Background decoration with improved effects */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-[url('/grid-pattern.svg')] opacity-5"></div>
+      <div className="absolute inset-0 z-[1]">
         <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#898989] via-[#000080] to-[#898989]"></div>
         <div className="absolute -top-64 -right-64 w-[30rem] h-[30rem] rounded-full bg-[#000080]/30 blur-[100px] hidden sm:block"></div>
         <div className="absolute -bottom-32 -left-32 w-[25rem] h-[25rem] rounded-full bg-[#000080]/30 blur-[100px] hidden sm:block"></div>
@@ -112,14 +117,14 @@ const Hero = () => {
       </div>
       
       <div className={`w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 md:py-12 relative z-10 ${isCustomWidthRange ? '!px-8' : ''}`}>
-        <div className="flex flex-col items-center sm:items-start text-center sm:text-left max-w-4xl mx-auto sm:mx-0 sm:ml-0 md:ml-8 lg:ml-16">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
             className="mb-2 sm:mb-3"
           >
-            <span className="inline-block px-3 py-1 bg-gradient-to-r from-[#000080]/20 via-[#000080]/30 to-[#000080]/20 text-[#000080]/30 text-[9px] sm:text-[10px] font-semibold tracking-wider rounded-full mb-3 sm:mb-4 backdrop-blur-sm border border-[#000080]/20">
+            <span className="inline-block px-3 py-1 bg-gradient-to-r from-[#000080]/20 via-[#000080]/30 to-[#000080]/20 text-white text-[10px] sm:text-xs font-semibold tracking-wider rounded-full mb-3 sm:mb-4 backdrop-blur-sm border border-[#000080]/20">
               INNOVATIVE TECHNOLOGY SOLUTIONS
             </span>
           </motion.div>
@@ -128,7 +133,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-[#000080]/30 to-white"
+            className="text-xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-white whitespace-nowrap"
           >
             ALHAMD TECHNOLOGIES
           </motion.h1>
@@ -137,7 +142,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="text-xs sm:text-sm mb-5 sm:mb-6 md:mb-8 max-w-2xl text-[#000080]/20 font-light leading-relaxed px-2 sm:px-0"
+            className="text-xs sm:text-sm md:text-base mb-5 sm:mb-6 md:mb-8 max-w-2xl text-white font-light leading-relaxed px-2 sm:px-0"
           >
             Experience the difference with Alhamd Technologies – where excellence is not just a goal, but a guarantee. We deliver cutting-edge solutions tailored to transform your business in today's digital landscape.
           </motion.p>
@@ -146,13 +151,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-6 sm:mb-8 w-full justify-center sm:justify-start"
+            className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-6 sm:mb-8 w-full justify-center"
           >
             <Link href="#services" className="w-full sm:w-auto">
               <motion.button 
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-5 py-2.5 sm:py-2 text-xs bg-gradient-to-r from-[#000080] to-[#000080] rounded-full text-white font-medium shadow-md shadow-[#000080]/30 hover:shadow-[#000080]/50 transition-all duration-300 w-full"
+                className="px-5 py-2.5 sm:py-2 text-sm bg-gradient-to-r from-[#000080] to-[#000080] rounded-full text-white font-medium shadow-md shadow-[#000080]/30 hover:shadow-[#000080]/50 transition-all duration-300 w-full"
               >
                 Explore Our Services
               </motion.button>
@@ -161,7 +166,7 @@ const Hero = () => {
               <motion.button 
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-5 py-2.5 sm:py-2 text-xs bg-transparent border border-[#000080]/30 hover:border-[#000080]/80 rounded-full text-[#000080]/30 font-medium backdrop-blur-sm hover:bg-[#000080]/10 transition-all duration-300 w-full"
+                className="px-5 py-2.5 sm:py-2 text-sm bg-transparent border border-[#000080]/30 hover:border-[#000080]/80 rounded-full text-white font-medium backdrop-blur-sm hover:bg-[#000080]/10 transition-all duration-300 w-full"
               >
                 Contact Us
               </motion.button>
@@ -188,8 +193,8 @@ const Hero = () => {
                   transition: { duration: 0.2 }
                 }}
               >
-                <span className="text-lg sm:text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#898989] to-[#898989] mb-0.5">{stat.value}</span>
-                <span className="text-[8px] sm:text-[9px] md:text-[10px] text-[#898989]">{stat.label}</span>
+                <span className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-0.5">{stat.value}</span>
+                <span className="text-[9px] sm:text-[10px] md:text-xs text-white">{stat.label}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -200,7 +205,7 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.8 }}
             className="w-full"
           >
-            <div className="flex justify-center sm:justify-start gap-1.5 sm:gap-2 flex-wrap">
+            <div className="flex justify-center gap-1.5 sm:gap-2 flex-wrap">
               {[
                 { name: "Milling Work", id: 1 },
                 { name: "Lathe Work", id: 2 },
@@ -214,7 +219,7 @@ const Hero = () => {
                   onClick={() => scrollToServiceAndShowPopup(service.id)}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
-                  className="text-[#000080]/30 text-[8px] sm:text-[9px] md:text-[10px] font-medium tracking-wide bg-slate-900/30 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full hover:bg-[#000080]/40 transition-colors cursor-pointer border border-[#000080]/20 hover:border-[#000080]/50 backdrop-blur-sm mb-1.5"
+                  className={`text-white text-[10px] sm:text-xs md:text-sm font-medium tracking-wide bg-slate-900/30 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full hover:bg-[#000080]/40 transition-colors cursor-pointer border border-[#000080]/20 hover:border-[#000080]/50 backdrop-blur-sm mb-1.5 ${index >= 3 ? 'hidden sm:block' : ''}`}
                 >
                   {service.name}
                 </motion.button>
