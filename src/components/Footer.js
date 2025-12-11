@@ -97,9 +97,9 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div className="text-sm">
-                  <p>Sector No - 14, Plot No - 14,</p>
-                  <p>Near Shivaji Maharaj Chowk, PCNTDA,</p>
-                  <p>Pune, Maharashtra - 411044</p>
+                  <p>H No.1890, BHIM NAGAR, MIDC Rd,</p>
+                  <p>opp. R-303, near Masjid, Naka, Rabale,</p>
+                  <p>Navi Mumbai, Maharashtra 400701</p>
                 </div>
               </div>
               <div className="flex items-center text-purple-200 group hover:text-white transition-colors">

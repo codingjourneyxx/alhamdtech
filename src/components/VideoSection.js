@@ -199,7 +199,7 @@ const VideoSection = () => {
                 <iframe 
                   ref={playerRef}
                   className="absolute top-0 left-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${videos[activeIndex].id}?autoplay=1&mute=0&controls=0&modestbranding=1&rel=0&enablejsapi=1&origin=${origin}&showinfo=0&fs=1&disablekb=1&iv_load_policy=3&color=white`}
+                  src={`https://www.youtube.com/embed/${videos[activeIndex].id}?autoplay=0&mute=0&controls=0&modestbranding=1&rel=0&enablejsapi=1&origin=${origin}&showinfo=0&fs=1&disablekb=1&iv_load_policy=3&color=white`}
                   title={videos[activeIndex].title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

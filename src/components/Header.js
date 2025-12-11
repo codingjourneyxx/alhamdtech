@@ -321,15 +321,15 @@ export default function Header() {
   }, [isSearchOpen]);
 
   return (
-    <header 
+    <header
       ref={headerRef}
-      className={`fixed w-full py-2 md:py-3 px-4 md:px-8 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white shadow-lg' 
+      className={`fixed w-full transition-all duration-300 ${
+        scrolled
+          ? 'bg-white shadow-lg'
           : 'bg-white'
       } ${
-        headerVisible 
-          ? 'translate-y-0' 
+        headerVisible
+          ? 'translate-y-0'
           : '-translate-y-full'
       }`}
       style={{
@@ -338,6 +338,19 @@ export default function Header() {
         zIndex: 50,
       }}
     >
+      {/* Top Bar with Address */}
+      <div className="bg-gradient-to-r from-purple-700 to-purple-900 text-white py-1.5 px-4 md:px-8">
+        <div className="flex items-center justify-center text-xs md:text-sm">
+          <svg className="w-3.5 h-3.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          <span className="truncate">H No.1890, BHIM NAGAR, MIDC Rd, opp. R-303, near Masjid, Naka, Rabale, Navi Mumbai, Maharashtra 400701</span>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <div className="py-2 md:py-3 px-4 md:px-8">
       <div className="flex justify-between items-center w-full">
         {/* Enhanced Logo with Gradient and Subtle Animation */}
         <Link href="/" className="flex items-center space-x-2 group">
@@ -428,7 +441,8 @@ export default function Header() {
           </button>
         </div>
       </div>
-      
+      </div>
+
       {/* Enhanced Search Popup with Results */}
       {isSearchOpen && (
         <div 
