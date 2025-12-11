@@ -219,9 +219,9 @@ export default function ContactForm() {
               <input 
                 type="checkbox"
                 required
-                className="rounded border-gray-300 text-slate-600 bg-white shadow-sm focus:border-slate-300 focus:ring focus:ring-slate-200 focus:ring-opacity-50"
+                className="rounded border-gray-300 text-[#000080] bg-white shadow-sm focus:border-slate-300 focus:ring focus:ring-slate-200 focus:ring-opacity-50"
               />
-              <span className="ml-2 text-gray-700">I agree to the <a href="#" className="text-slate-600 hover:underline">privacy policy</a> and consent to being contacted regarding my inquiry.</span>
+              <span className="ml-2 text-gray-700">I agree to the <a href="#" className="text-[#000080] hover:underline">privacy policy</a> and consent to being contacted regarding my inquiry.</span>
             </label>
           </div>
         </div>
@@ -230,7 +230,7 @@ export default function ContactForm() {
         <div className="flex justify-between items-center bg-white p-4 shadow-md">
           <button
             type="submit"
-            className="bg-slate-600 hover:bg-slate-700 text-white font-medium py-2 px-6 rounded-md transition-colors duration-200 flex items-center"
+            className="bg-[#000080] hover:bg-[#000080] text-white font-medium py-2 px-6 rounded-md transition-colors duration-200 flex items-center"
           >
             <span>Submit Inquiry</span>
             {submitting && (
@@ -243,7 +243,7 @@ export default function ContactForm() {
           
           <button
             type="button"
-            className="text-slate-600 hover:text-slate-700 font-medium transition-colors duration-200 flex items-center"
+            className="text-[#000080] hover:text-[#000080] font-medium transition-colors duration-200 flex items-center"
             onClick={() => {
               setFormData({
                 name: '',

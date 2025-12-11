@@ -471,7 +471,7 @@ export default function Header() {
               />
               <button 
                 type="submit"
-                className="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-[#000080] text-white rounded-md hover:bg-slate-700 transition-colors duration-200"
+                className="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-[#000080] text-white rounded-md hover:bg-[#000060] transition-colors duration-200"
                 aria-label="Submit search"
               >
                 Search
@@ -493,7 +493,7 @@ export default function Header() {
                             className="p-3 hover:bg-[#000080]/10 rounded-lg cursor-pointer transition-colors duration-200"
                             onClick={() => handleSearchResultClick(service.path)}
                           >
-                            <h4 className="text-md font-medium text-slate-700">{service.title}</h4>
+                            <h4 className="text-md font-medium text-[#000080]">{service.title}</h4>
                             <p className="text-sm text-gray-600">{service.description}</p>
                           </div>
                         ))}
@@ -512,7 +512,7 @@ export default function Header() {
                             className="p-3 hover:bg-[#000080]/10 rounded-lg cursor-pointer transition-colors duration-200"
                             onClick={() => handleSearchResultClick(page.path)}
                           >
-                            <h4 className="text-md font-medium text-slate-700">{page.title}</h4>
+                            <h4 className="text-md font-medium text-[#000080]">{page.title}</h4>
                             <p className="text-sm text-gray-600">{page.description}</p>
                           </div>
                         ))}
@@ -539,10 +539,10 @@ export default function Header() {
                       {services.map((service) => (
                         <div 
                           key={service.id} 
-                          className="p-3 border border-gray-100 hover:border-slate-200 hover:bg-[#000080]/10 rounded-lg cursor-pointer transition-all duration-200"
+                          className="p-3 border border-gray-100 hover:border-[#000080]/30 hover:bg-[#000080]/10 rounded-lg cursor-pointer transition-all duration-200"
                           onClick={() => handleSearchResultClick(service.path)}
                         >
-                          <h4 className="text-md font-medium text-slate-700">{service.title}</h4>
+                          <h4 className="text-md font-medium text-[#000080]">{service.title}</h4>
                           <p className="text-xs text-gray-600 mt-1">{service.description}</p>
                         </div>
                       ))}

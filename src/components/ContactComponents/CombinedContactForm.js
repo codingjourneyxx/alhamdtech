@@ -75,12 +75,12 @@ export default function CombinedContactForm() {
           <div className="bg-white overflow-hidden border-b border-gray-200">
             <div className="p-4">
               <div className="flex items-center">
-                <div className="inline-flex items-center justify-center w-10 h-10 bg-slate-600 rounded-lg shadow-md">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-[#000080] rounded-lg shadow-md">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                   </svg>
                 </div>
-                <h2 className="text-xl font-bold text-gray-700 ml-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-600 to-slate-800">Contact information</h2>
+                <h2 className="text-xl font-bold text-gray-700 ml-3 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-slate-800">Contact information</h2>
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function CombinedContactForm() {
           <div className="flex justify-between items-center bg-white p-4">
             <button
               type="submit"
-              className="bg-slate-600 hover:bg-slate-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center"
+              className="bg-[#000080] hover:bg-[#000080] text-white font-medium py-2 px-4 rounded-md transition-colors duration-200 flex items-center"
             >
               <span>Submit Inquiry</span>
               {submitting && (
@@ -223,7 +223,7 @@ export default function CombinedContactForm() {
             
             <button
               type="button"
-              className="text-slate-600 hover:text-slate-700 font-medium transition-colors duration-200 flex items-center"
+              className="text-[#000080] hover:text-[#000080] font-medium transition-colors duration-200 flex items-center"
               onClick={() => {
                 setFormData({
                   name: '',
@@ -265,12 +265,12 @@ export default function CombinedContactForm() {
         <h3 className="text-xl font-bold text-gray-800 mb-3 opacity-0 hidden lg:block">.</h3>
         <div className="bg-gradient-to-br from-white to-slate-50 p-4 rounded-xl shadow-lg border border-slate-100 flex flex-col flex-grow">
           <div className="flex items-center mb-3">
-            <div className="inline-flex items-center justify-center w-10 h-10 bg-slate-600 rounded-lg shadow-md">
+            <div className="inline-flex items-center justify-center w-10 h-10 bg-[#000080] rounded-lg shadow-md">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-800 ml-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-600 to-slate-800">Business Hours</h3>
+            <h3 className="text-xl font-bold text-gray-800 ml-3 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-slate-800">Business Hours</h3>
           </div>
           
           <div className="space-y-1 flex-grow">
@@ -280,13 +280,13 @@ export default function CombinedContactForm() {
                 className="flex justify-between items-center py-1 px-2 rounded-lg transition-all duration-200 hover:bg-slate-100/50 text-sm"
               >
                 <span className="font-medium text-gray-700">{schedule.day}</span>
-                <span className="text-slate-700 bg-slate-100 px-2 py-1 rounded-full font-medium">{schedule.hours}</span>
+                <span className="text-[#000080] bg-slate-100 px-2 py-1 rounded-full font-medium">{schedule.hours}</span>
               </div>
             ))}
           </div>
           
           <div className="mt-2 pt-2 border-t border-slate-100">
-            <p className="text-center text-xs text-slate-600 font-medium">We're available to serve you every day!</p>
+            <p className="text-center text-xs text-[#000080] font-medium">We're available to serve you every day!</p>
           </div>
 
           {/* Contact Support Card */}
@@ -295,7 +295,7 @@ export default function CombinedContactForm() {
             <p className="text-gray-600 mb-3">
               Our customer support team is ready to assist you with any questions.
             </p>
-            <a href="tel:+919022726250" className="block w-full text-center bg-slate-600 hover:bg-slate-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-200">
+            <a href="tel:+919022726250" className="block w-full text-center bg-[#000080] hover:bg-[#000080] text-white font-medium py-2 px-4 rounded-md transition-all duration-200">
               Call Us Now
             </a>
           </div>
